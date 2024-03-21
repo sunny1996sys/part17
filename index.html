@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="This is an Ecommerce project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce project</title>
+</head>
+
+<body>
+    <!-- <h1>kearishop</h1> -->
+
+    <!-- navbar starts here -->
+    <i class="fa-solid fa-bars fa-2x" id="menu-icon"></i>
+
+    <nav id="menu" class="hedden">
+
+        <ul class="nav-upper flex-space-around">
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Home</a>
+            </li>
+            <li class="nav_list">
+                <a href="register.html" class="nav_link">Register</a>
+            </li>
+            <li class="nav_list">
+                <a href="login.html" class="nav_link">Login</a>
+            </li>
+            <li class="nav_list">
+                <a href="index.html" class="nav_link">Logout</a>
+            </li>
+            <li class="nav_list">
+                <a href="contact.html" class="nav_link">Contact</a>
+            </li>
+            <li class="nav_list">
+                <a href="profile.html" class="nav_link"><img class="profile-icon" src="./img/logo.png">
+                </a>
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav_list"><a href="/index.html" class="nav_brand 
+                nav_link">EAT-24</a>
+            </li>
+            <li class="nav_list">
+                <a href="/cart.html" class="nav_link">
+                    <span><img class="icon" src="./img/icon.png"style="height: 45px; width: 50px;"></span>Cart 2 products-$124.40
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- navbar end here -->
+
+    <!-- header starts here  -->
+
+    <header class="header">
+        <div class="banner flex-space-around">
+            <marquee class="banner_title" behavior="" direction="">Free Delyvery</marquee>
+            <div class="features flex-space-around">
+                <article class="feature flex-center">
+                    <i class=" fa-brands fa-rocketchat feature_icon "></i>
+                    <h3>Any time <br> just order for message</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-regular fa-credit-card feature_icon"></i>
+
+                    <h3>safe mony</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-truck feature_icon"></i>
+                    <h3>shipping within 2hours</h3>
+                </article>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- header ends here -->
+    <main class="flex-center">
+        <div class="sideber">
+            <section class="categories-section">
+                <h3 class="section-title">Categories</h3>
+                <ul class="list">
+                    <li class="list_item"></li>
+                    <label for="phone"> <input type="checkbox" name="phone" id="phone"> phones</label>
+
+                    <li class="list_item"></li>
+                    <label for="phone"> <input type="checkbox" name="phone" id="phone"> phones</label>
+                    <li class="list_item"></li>
+                    <label for="phone"> <input type="checkbox" name="phone" id="phone"> phones</label>
+                    <li class="list_item"></li>
+                    <label for="phone"> <input type="checkbox" name="phone" id="phone"> phones</label>
+                    <li class="list_item"></li>
+                    <label for="phone"> <input type="checkbox" name="phone" id="phone"> phones</label>
+                </ul>
+            </section>
+
+
+
+            <section class="price-section">
+                <h3 class="section-title">price section</h3>
+                <ul class="list">
+                    <li class="list_item"></li>
+                    <label for="Price Range">
+                         <input type="radio" name="Price1" id="price1" value="0.20"> $0-$20</label>
+                    <li class="list_item"></li>
+                    <label for="Price Range">
+                              <input type="radio" name="Price1" id="price1" value="0.20"> $0-$20</label>
+                    <li class="list_item"></li>
+                    <label for="Price Range">
+                                   <input type="radio" name="Price1" id="price1" value="0.20"> $0-$20</label>
+
+                </ul>
+            </section>
+            <section class="shipping-section">
+                <h3 class="section-title">shipping</h3>
+                <ul class="list">
+                    <li class="list_item"></li>
+                    <label for="Shipping">
+                         <input type="radio" name="shipping" id="free" value="free"> Free</label>
+                    <li class="list_item"></li>
+                    <label for="Shipping">
+                              <input type="radio" name="shipping" id="Paid" value="Paid">Paid</label>
+                </ul>
+            </section>
+        </div>
+        <div class="main-content">
+            <section class="action flex-space-around">
+                <div class="section_sort">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                    <option value="sold">Most sold First</option>
+                    <option value="rating">Most rated First</option>
+                    <option value="arrival">Newest First</option>
+                    <option value="discount">Biggest discount First</option>
+                    </select>
+                </div>
+                <div class="action_serarch">
+                    <input type="text" placeholder="Search product">
+                    <button class="btn">
+                      <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+            <!-- product section starts here -->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./img/rice.jpeg" alt="">
+                    <div class="product_body">
+                        <h3 class="product_name">Fride Rice</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi culpa voluptas repellat porro officia repudiandae sed officiis maxime quo. <a href="product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product-price">225tk</h4>
+                        <p class="product-rating">Rating:4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in stock</span>
+                        <hr class="hr-design">
+                        <span>2 sold</span>
+                    </div>
+                    <img class="product_img" src="./img/fish.jpg" alt="">
+                    <div class="product_body">
+                        <h3 class="product_name">Fish curry</h3>
+                        <p>
+                            <span class="dot green"></span>s
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi culpa voluptas repellat porro officia repudiandae sed officiis maxime quo. <a href="product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product-price">120tk</h4>
+                        <p class="product-rating">Rating:4.2/4</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>4 in stock</span>
+                        <hr class="hr-design">
+                        <span>2 sold</span>
+                    </div>
+                    <img class="product_img" src="./img/chiken.jpeg" alt="">
+                    <div class="product_body">
+                        <h3 class="product_name">Chiken Curry</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi culpa voluptas repellat porro officia repudiandae sed officiis maxime quo. <a href="product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product-price">150tk</h4>
+                        <p class="product-rating">Rating:3.8/4</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>5 in stock</span>
+                        <hr class="hr-design">
+                        <span>3 sold</span>
+                    </div>
+                    <img class="product_img" src="./img/rice.jpeg" alt="">
+                    <div class="product_body">
+                        <h3 class="product_name">Fride Rice</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi culpa voluptas repellat porro officia repudiandae sed officiis maxime quo. <a href="product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product-price">225tk</h4>
+                        <p class="product-rating">Rating:4.5/5</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>3 in stock</span>
+                        <hr class="hr-design">
+                        <span>2 sold</span>
+                    </div>
+                    <img class="product_img" src="./img/fish.jpg" alt="">
+                    <div class="product_body">
+                        <h3 class="product_name">Fish curry</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi culpa voluptas repellat porro officia repudiandae sed officiis maxime quo. <a href="product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product-price">120tk</h4>
+                        <p class="product-rating">Rating:4.2/4</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge">
+                        <span>4 in stock</span>
+                        <hr class="hr-design">
+                        <span>2 sold</span>
+                    </div>
+                    <img class="product_img" src="./img/chiken.jpeg" alt="">
+                    <div class="product_body">
+                        <h3 class="product_name">Chiken Curry</h3>
+                        <p>
+                            <span class="dot green"></span>
+                            <span class="dot red"></span>
+                            <span class="dot blue"></span>
+                        </p>
+                        <p class="product_description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quasi culpa voluptas repellat porro officia repudiandae sed officiis maxime quo. <a href="product.html" class="learn-more">Learn More</a>
+                        </p>
+                        <h4 class="product-price">150tk</h4>
+                        <p class="product-rating">Rating:3.8/4</p>
+                        <button class="btn product_button">Add To Cart</button>
+                    </div>
+                </article>
+            </section>
+
+            <div class="pagination">
+
+                <button class=" pagination_btn">  <i class="fas fa-less-than "></i></button>
+                <button class=" pagination_btn">2</button>
+                <button class="pagination_btn">3</button>
+                <button class="pagination_btn">4</button>
+                <button class=" pagination_btn">5</button>
+                <button class="pagination_btn">6</button>
+                <button class="pagination_btn">7</button>
+                <button class="pagination_btn">8</button>
+                <button class=" pagination_btn">9</button>
+                <button class="pagination_btn">10</button>
+                <button class="pagination_btn">...</button>
+                <button class="pagination_btn">50</button>
+                <button class="pagination_btn">  <i class="fas fa-greater-than "></i></button>
+
+            </div>
+            <!-- product section starts here -->
+        </div>
+    </main>
+    <!-- footer start here -->
+    <footer class="flex-space-around">
+        <div>
+            <a href="/cart.html" class="nav_link">
+                <span><img class="icon" src="./img/icon.png"style="height: 40px; width: 45px;"></span>Eat-24
+            </a>
+
+            <h1> Navigate</h1>
+            <ul>
+                <li>Home</li>
+                <li>Register</li>
+                <li>Login</li>
+                <li> Logout</li>
+            </ul>
+
+            <!-- <label for="subscribe">subscribe to Newsletter</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer_input" placeholder="Your Email Address">
+            <button class="btn-subscribe">subscribe</button> -->
+
+        </div>
+        <div>
+            <h1>Follow Us</h1>
+
+
+            <a href=" https://web.facebook.com/profile.php?id=100024394500910 "><img src="./img/th.png " style="height: 20%; width: 38%; display: inline-block;margin-right: 1rem; ">
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/fazly-rabbi-sani/ "><img src="./img/th1.png " style="height: 28%; width: 23%;display: inline-block; margin-right: -48rem;"></a>
+
+        </div>
+        <div>
+            <h1>contact me</h1>
+            <p>Email:rabbisani1997@gmail.com</p>
+            <p>phone:01957724284</p>
+        </div>
+    </footer>
+    <!-- footer end here -->
+    <script src="index.js"></script>
+
+</body>
+
+</html>
